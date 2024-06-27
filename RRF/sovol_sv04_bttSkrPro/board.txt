@@ -1,0 +1,20 @@
+// Board Hardware configuration file for SKR Pro v1.2 F407
+
+stepper.DriverType = {TMC2209, TMC2209, TMC2209, TMC2209, TMC2209}
+
+// Main relay
+atx.powerPin = PA_2
+atx.initialPowerOn = 1
+
+// WiFi pins
+wifi.espDataReadyPin = PG_10
+wifi.TfrReadyPin = PF_11
+wifi.espResetPin = PF_12
+wifi.serialRxTxPins = {PD_9, PD_8}
+
+// CAN-FD
+can.csPin = PG_12
+can.spiChannel = 2
+
+// TFT pins
+serial.aux.rxTxPins = {PA_10, PA_9}
